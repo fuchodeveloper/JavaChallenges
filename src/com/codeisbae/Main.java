@@ -4,7 +4,22 @@ public class Main {
 
   public static void main(String[] args) {
     // write your code here
-    printYearsAndDays(561600);
+    printEqual(1,2,3);
+  }
+
+  // Equality printer
+  public static void printEqual(int firstNum, int secondNum, int thirdNum) {
+    if (firstNum < 0 || secondNum < 0 || thirdNum < 0) {
+      System.out.println("Invalid Value");
+    } else {
+      if (firstNum == secondNum && firstNum == thirdNum) {
+        System.out.println("All numbers are equal");
+      } else if (firstNum != secondNum && firstNum != thirdNum && secondNum != thirdNum) {
+        System.out.println("All numbers are different");
+      } else {
+        System.out.println("Neither all are equal or different");
+      }
+    }
   }
 
   // Minutes to Years and Days calculator
